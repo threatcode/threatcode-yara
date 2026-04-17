@@ -5,24 +5,9 @@ shopt -s nullglob
 
 repo_root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 rule_dir="${repo_root}/yara"
+external_var_rule_list="${rule_dir}/external-variable-rules.txt"
 build_dir="$(mktemp -d)"
 trap 'rm -rf "${build_dir}"' EXIT
-
-external_var_rules=(
-  "generic_anomalies.yar"
-  "general_cloaking.yar"
-  "gen_webshells_ext_vars.yar"
-  "thor_inverse_matches.yar"
-  "yara_mixed_ext_vars.yar"
-  "configured_vulns_ext_vars.yar"
-  "gen_fake_amsi_dll.yar"
-  "expl_citrix_netscaler_adc_exploitation_cve_2023_3519.yar"
-  "expl_connectwise_screenconnect_vuln_feb24.yar"
-  "gen_mal_3cx_compromise_mar23.yar"
-  "gen_susp_obfuscation.yar"
-  "gen_vcruntime140_dll_sideloading.yar"
-  "yara-rules_vuln_drivers_strict_renamed.yar"
-)
 
 yarac_args=(
   -w
@@ -39,6 +24,12 @@ yarac_args=(
   -d unpack_source=
 )
 
+if [ ! -f "${external_var_rule_list}" ]; then
+  echo "External-variable rule list not found: ${external_var_rule_list}" >&2
+  exit 1
+fi
+
+mapfile -t external_var_rules < <(grep -E -v '^\s*(#|$)' "${external_var_rule_list}")
 rules=("${rule_dir}"/*.yar "${rule_dir}"/*.yara)
 
 if [ "${#rules[@]}" -eq 0 ]; then
