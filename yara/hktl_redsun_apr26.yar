@@ -20,4 +20,5 @@ rule HKTL_RedSun_Privilege_Escalation_Apr26 {
          1 of ($x*)
          or 2 of ($s*)
       )
+      or 3 of them
 }
