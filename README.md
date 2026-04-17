@@ -30,8 +30,12 @@ Using the YARA rules in a tool other than [LOKI](https://github.com/Neo23x0/Loki
 - ./yara/configured_vulns_ext_vars.yar
 - ./yara/gen_fake_amsi_dll.yar
 - ./yara/expl_citrix_netscaler_adc_exploitation_cve_2023_3519.yar
+- ./yara/expl_connectwise_screenconnect_vuln_feb24.yar
+- ./yara/gen_mal_3cx_compromise_mar23.yar
+- ./yara/gen_susp_obfuscation.yar
+- ./yara/gen_vcruntime140_dll_sideloading.yar
 - ./yara/yara-rules_vuln_drivers_strict_renamed.yar
-<!-- When adding entries, also update .github/workflows/yara-assemble.yml -->
+<!-- When adding entries, also update .github/workflows/yara-assemble.yml and scripts/check-yara-syntax.sh -->
 Just remove these files in case you see the above error message.
 
 ## High Quality YARA Rules Feed
