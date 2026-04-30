@@ -6,6 +6,7 @@ rule EXPL_LNX_Copy_Fail_Artefacts_CVE_2026_31431_Apr26 {
       reference_1 = "https://github.com/tgies/copy-fail-c"
       reference_2 = "https://github.com/theori-io/copy-fail-CVE-2026-31431"
       reference_3 = "https://hackerspace.pl/~q3k/alpine.py"
+      reference_4 = "https://github.com/badsectorlabs/copyfail-go"
       date = "2026-04-30"
       score = 75
    strings:
