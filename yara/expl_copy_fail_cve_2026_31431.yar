@@ -9,8 +9,8 @@ rule EXPL_LNX_Copy_Fail_Artefacts_CVE_2026_31431_Apr26 {
       date = "2026-04-30"
       score = 75
    strings:
-      // Network indicators
-      $xs1 = "https://copy.fail/exp" ascii
+      // Network indicators (e.g. in bash history, logs, etc.)
+      $xs1 = "curl https://copy.fail/exp" ascii
 
       // Code fragments from public PoCs
       $x1 = "| python3 && su"
