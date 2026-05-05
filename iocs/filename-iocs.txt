@@ -4557,17 +4557,17 @@ C:\\perflogs\\RunSchedulerTaskOnce\.ps1;85
 \\AppData\\Roaming\\ProShow\\load$;75
 \\AppData\\Roaming\\ProShow\\ProShow\.exe;75
 \\AppData\\Roaming\\Adobe\\Scripts\\alien\.ini;75
-\\AppData\\Roaming\\Adobe\\Scripts\\script.exe;75
+\\AppData\\Roaming\\Adobe\\Scripts\\script\.exe;75
 \\libtcc\.dll;60
 
 # DAEMON Tools Lite supplychain comrpomise https://securelist.com/tr/daemon-tools-backdoor/119654/
-C:\\Temp\\crypto.dll;85
-C:\\Windows\\Temp\\envchk.exe;85
-\\AppData\\Roaming\\Microsoft\\mcrypto.dat;85
-C:\\Windows\\Temp\\cdg.exe;85
-C:\\Windows\\Temp\\cdg.tmp;85
-C:\\Windows\\Temp\\imp.tmp;85
-C:\\Windows\\Temp\\piyu.exe;85
-C:\\ProgramData\\Microsoft\\mcrypto.chiper;85
+C:\\Temp\\crypto\.dll;85
+C:\\Windows\\Temp\\envchk\.exe;85
+\\AppData\\Roaming\\Microsoft\\mcrypto\.dat;85
+C:\\Windows\\Temp\\cdg\.exe;85
+C:\\Windows\\Temp\\cdg\.tmp;85
+C:\\Windows\\Temp\\imp\.tmp;85
+C:\\Windows\\Temp\\piyu\.exe;85
+C:\\ProgramData\\Microsoft\\mcrypto\.chiper;85
 
 # End
