@@ -65,10 +65,9 @@ rule EXPL_LNX_DirtyFrag_ForensicArtefacts_May26 {
       date = "2026-05-08"
       score = 75
    strings:
-      $xa1 = "echo 3 > /proc/sys/vm/drop_caches" ascii
-      $xa2 = "/V4bel/dirtyfrag.git" ascii
-      $xa3 = "static const uint8_t shell_elf[PAYLOAD_LEN] = {" ascii
-      $xa4 = "/usr/bin/su page-cache patched (entry 0x%x = shellcode)" ascii
+      $xa1 = "/V4bel/dirtyfrag.git" ascii
+      $xa2 = "static const uint8_t shell_elf[PAYLOAD_LEN] = {" ascii
+      $xa3 = "/usr/bin/su page-cache patched (entry 0x%x = shellcode)" ascii
    condition:
       filesize < 800KB
       and 1 of ($xa*)
