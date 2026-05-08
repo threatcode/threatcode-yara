@@ -1908,4 +1908,8 @@ repocket.com
 181.214.147.164;65
 192.119.99.42;65
 
+# DAEMON Tools Lite supplychain comrpomise https://securelist.com/tr/daemon-tools-backdoor/119654/
+env-check.daemontools.cc
+38.180.107.76
+
 # Last Line

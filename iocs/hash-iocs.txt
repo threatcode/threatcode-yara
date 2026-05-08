@@ -3355,3 +3355,24 @@ aa9f5ed1eede9aac6d07b0ba13b73185838b159006fa83ed45657d7f333a0efe;ScreenConnect E
 cf265a3a3dd068d0aa0c70248cd6325d;perfctl IOCs https://www.aquasec.com/blog/perfctl-a-stealthy-malware-targeting-millions-of-linux-servers/
 da006a0b9b51d56fa3f9690cf204b99f;perfctl IOCs https://www.aquasec.com/blog/perfctl-a-stealthy-malware-targeting-millions-of-linux-servers/
 ba120e9c7f8896d9148ad37f02b0e3cb;perfctl IOCs https://www.aquasec.com/blog/perfctl-a-stealthy-malware-targeting-millions-of-linux-servers/
+
+9ccd769624de98eeeb12714ff1707ec4f5bf196d;DAEMON Tools Lite supplychain compromise IOCs  https://securelist.com/tr/daemon-tools-backdoor/119654/
+50d47adb6dd45215c7cb4c68bae28b129ca09645;DAEMON Tools Lite supplychain compromise IOCs  https://securelist.com/tr/daemon-tools-backdoor/119654/
+0c1d3da9c7a651ba40b40e12d48ebd32b3f31820;DAEMON Tools Lite supplychain compromise IOCs  https://securelist.com/tr/daemon-tools-backdoor/119654/
+28b72576d67ae21d9587d782942628ea46dcc870;DAEMON Tools Lite supplychain compromise IOCs  https://securelist.com/tr/daemon-tools-backdoor/119654/
+46b90bf370e60d61075d3472828fdc0b85ab0492;DAEMON Tools Lite supplychain compromise IOCs  https://securelist.com/tr/daemon-tools-backdoor/119654/
+6325179f442e5b1a716580cd70dea644ac9ecd18;DAEMON Tools Lite supplychain compromise IOCs  https://securelist.com/tr/daemon-tools-backdoor/119654/
+bd8fbb5e6842df8683163adbd6a36136164eac58;DAEMON Tools Lite supplychain compromise IOCs  https://securelist.com/tr/daemon-tools-backdoor/119654/
+15ed5c3384e12fe4314ad6edbd1dcccf5ac1ee29;DAEMON Tools Lite supplychain compromise IOCs  https://securelist.com/tr/daemon-tools-backdoor/119654/
+524d2d92909eef80c406e87a0fc37d7bb4dadc14;DAEMON Tools Lite supplychain compromise IOCs  https://securelist.com/tr/daemon-tools-backdoor/119654/
+427f1728682ebc7ffe3300fef67d0e3cb6b62948;DAEMON Tools Lite supplychain compromise IOCs  https://securelist.com/tr/daemon-tools-backdoor/119654/
+8e7eb0f5ac60dd3b4a9474d2544348c3bda48045;DAEMON Tools Lite supplychain compromise IOCs  https://securelist.com/tr/daemon-tools-backdoor/119654/
+00e2df8f42d14072e4385e500d4669ec783aa517;DAEMON Tools Lite supplychain compromise IOCs  https://securelist.com/tr/daemon-tools-backdoor/119654/
+aea55e42c4436236278e5692d3dcbcbe5fe6ce0b;DAEMON Tools Lite supplychain compromise IOCs  https://securelist.com/tr/daemon-tools-backdoor/119654/
+0456e2f5f56ec8ed16078941248e7cbba9f1c8eb;DAEMON Tools Lite supplychain compromise IOCs  https://securelist.com/tr/daemon-tools-backdoor/119654/
+9a09ad7b7e9ff7a465aa1150541e231189911afb;DAEMON Tools Lite supplychain compromise IOCs  https://securelist.com/tr/daemon-tools-backdoor/119654/
+8d435918d304fc38d54b104a13f2e33e8e598c82;DAEMON Tools Lite supplychain compromise IOCs  https://securelist.com/tr/daemon-tools-backdoor/119654/
+64462f751788f529c1eb09023b26a47792ecdc54;DAEMON Tools Lite supplychain compromise IOCs  https://securelist.com/tr/daemon-tools-backdoor/119654/
+2d4eb55b01f59c62c6de9aacba9b47267d398fe4;DAEMON Tools Lite supplychain compromise IOCs  https://securelist.com/tr/daemon-tools-backdoor/119654/
+9dbfc23ebf36b3c0b56d2f93116abb32656c42e4;DAEMON Tools Lite supplychain compromise IOCs  https://securelist.com/tr/daemon-tools-backdoor/119654/
+295ce86226b933e7262c2ce4b36bdd6c389aaaef;DAEMON Tools Lite supplychain compromise IOCs  https://securelist.com/tr/daemon-tools-backdoor/119654/
