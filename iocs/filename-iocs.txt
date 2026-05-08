@@ -4560,4 +4560,7 @@ C:\\perflogs\\RunSchedulerTaskOnce\.ps1;85
 \\AppData\\Roaming\\Adobe\\Scripts\\script.exe;75
 \\libtcc\.dll;60
 
+# DirtyFrag https://github.com/V4bel/dirtyfrag/
+\\dirtyfrag\\exp;80
+
 # End
