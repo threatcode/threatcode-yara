@@ -15,6 +15,7 @@ private rule MachO
 {
     meta:
         description = "Mach-O binaries"
+        id = "40526d0e-dede-5001-996c-b12f668a7f53"
     condition:
         uint32(0) == 0xfeedface or uint32(0) == 0xcefaedfe or uint32(0) == 0xfeedfacf or uint32(0) == 0xcffaedfe or uint32(0) == 0xcafebabe or uint32(0) == 0xbebafeca
 }
@@ -27,6 +28,7 @@ rule hacktool_macos_exploit_cve_5889
         description = "http://www.cvedetails.com/cve/cve-2015-5889"
         reference = "https://www.exploit-db.com/exploits/38371/"
         author = "@mimeframe"
+        id = "fbc2c577-6954-51aa-a79f-974f856faf42"
     strings:
         $a1 = "/etc/sudoers" fullword wide ascii
         $a2 = "/etc/crontab" fullword wide ascii
@@ -44,6 +46,7 @@ rule hacktool_macos_exploit_tpwn
         description = "tpwn exploits a null pointer dereference in XNU to escalate privileges to root."
         reference = "https://www.rapid7.com/db/modules/exploit/osx/local/tpwn"
         author = "@mimeframe"
+        id = "bfd4765a-2358-5de7-91e6-9c2e1b70780f"
     strings:
         $a1 = "[-] Couldn't find a ROP gadget, aborting." wide ascii
         $a2 = "leaked kaslr slide," wide ascii
@@ -59,6 +62,7 @@ rule hacktool_macos_juuso_keychaindump
         description = "For reading OS X keychain passwords as root."
         reference = "https://github.com/juuso/keychaindump"
         author = "@mimeframe"
+        id = "196c6132-b538-5055-a4cb-e2d46723d06e"
     strings:
         $a1 = "[-] Too many candidate keys to fit in memory" wide ascii
         $a2 = "[-] Could not allocate memory for key search" wide ascii
@@ -76,6 +80,7 @@ rule hacktool_macos_keylogger_b4rsby_swiftlog
         description = "Dirty user level command line keylogger hacked together in Swift."
         reference = "https://github.com/b4rsby/SwiftLog"
         author = "@mimeframe"
+        id = "7f42e787-a723-5e20-99a3-54e1ffa6ccda"
     strings:
         $a1 = "You need to enable the keylogger in the System Prefrences" wide ascii
     condition:
@@ -88,6 +93,7 @@ rule hacktool_macos_keylogger_caseyscarborough
         description = "A simple and easy to use keylogger for macOS."
         reference = "https://github.com/caseyscarborough/keylogger"
         author = "@mimeframe"
+        id = "191efd22-3f9e-57da-992f-3cc2ab6ecdfa"
     strings:
         $a1 = "/var/log/keystroke.log" wide ascii
         $a2 = "ERROR: Unable to create event tap." wide ascii
@@ -103,6 +109,7 @@ rule hacktool_macos_keylogger_dannvix
         description = "A simple keylogger for macOS."
         reference = "https://github.com/dannvix/keylogger-osx"
         author = "@mimeframe"
+        id = "175e0f9f-fd57-5306-807f-911031d7537d"
     strings:
         $a1 = "/var/log/keystroke.log" wide ascii
         $a2 = "<forward-delete>" wide ascii
@@ -117,6 +124,7 @@ rule hacktool_macos_keylogger_eldeveloper_keystats
         description = "A simple keylogger for macOS."
         reference = "https://github.com/ElDeveloper/keystats"
         author = "@mimeframe"
+        id = "468bf492-2fab-5658-9744-8967a52457e3"
     strings:
         $a1 = "YVBKeyLoggerPerishedNotification" wide ascii
         $a2 = "YVBKeyLoggerPerishedByLackOfResponseNotification" wide ascii
@@ -131,6 +139,7 @@ rule hacktool_macos_keylogger_giacomolaw
         description = "A simple keylogger for macOS."
         reference = "https://github.com/GiacomoLaw/Keylogger"
         author = "@mimeframe"
+        id = "4a9e4fe6-5f28-5f42-9726-ced687055038"
     strings:
         $a1 = "ERROR: Unable to access keystroke log file. Please make sure you have the correct permissions." wide ascii
         $a2 = "ERROR: Unable to create event tap." wide ascii
@@ -145,6 +154,7 @@ rule hacktool_macos_keylogger_logkext
         description = "LogKext is an open source keylogger for Mac OS X, a product of FSB software."
         reference = "https://github.com/SlEePlEs5/logKext"
         author = "@mimeframe"
+        id = "849cbd43-288b-55de-b031-09322e49784c"
     strings:
         // daemon
         $a1 = "logKextPassKey" wide ascii
@@ -171,6 +181,7 @@ rule hacktool_macos_keylogger_roxlu_ofxkeylogger
         description = "ofxKeylogger keylogger."
         reference = "https://github.com/roxlu/ofxKeylogger"
         author = "@mimeframe"
+        id = "622d7da4-25da-56a4-9e60-a225c2eaf0a1"
     strings:
         $a1 = "keylogger_init" wide ascii
         $a2 = "install_keylogger_hook function not found in dll." wide ascii
@@ -185,6 +196,7 @@ rule hacktool_macos_keylogger_skreweverything_swift
         description = "It is a simple and easy to use keylogger for macOS written in Swift."
         reference = "https://github.com/SkrewEverything/Swift-Keylogger"
         author = "@mimeframe"
+        id = "eed3b9bb-e8e4-53b6-8d17-8aa989d8a2fc"
     strings:
         $a1 = "Can't create directories!" wide ascii
         $a2 = "Can't create manager" wide ascii
@@ -201,6 +213,7 @@ rule hacktool_macos_macpmem
         description = "MacPmem enables read/write access to physical memory on macOS. Can be used by CSIRT teams and attackers."
         reference = "https://github.com/google/rekall/tree/master/tools/osx/MacPmem"
         author = "@mimeframe"
+        id = "26ee217b-a3f3-5742-801e-cdc0684dfd99"
     strings:
         // osxpmem
         $a1 = "%s/MacPmem.kext" wide ascii
@@ -222,6 +235,7 @@ rule hacktool_macos_manwhoami_icloudcontacts
         description = "Pulls iCloud Contacts for an account. No dependencies. No user notification."
         reference = "https://github.com/manwhoami/iCloudContacts"
         author = "@mimeframe"
+        id = "7c1f218e-c790-50ce-9408-d20747abde2e"
     strings:
         $a1 = "https://setup.icloud.com/setup/authenticate/" wide ascii
         $a2 = "https://p04-contacts.icloud.com/" wide ascii
@@ -237,6 +251,7 @@ rule hacktool_macos_manwhoami_mmetokendecrypt
         description = "This program decrypts / extracts all authorization tokens on macOS / OS X / OSX."
         reference = "https://github.com/manwhoami/MMeTokenDecrypt"
         author = "@mimeframe"
+        id = "8792bf45-9c92-53cf-a288-e38fe2a19642"
     strings:
         $a1 = "security find-generic-password -ws 'iCloud'" wide ascii
         $a2 = "ERROR getting iCloud Decryption Key" wide ascii
@@ -253,6 +268,7 @@ rule hacktool_macos_manwhoami_osxchromedecrypt
         description = "Decrypt Google Chrome / Chromium passwords and credit cards on macOS / OS X."
         reference = "https://github.com/manwhoami/OSXChromeDecrypt"
         author = "@mimeframe"
+        id = "1cae37d5-2995-55f6-b821-d89334f11b9a"
     strings:
         $a1 = "Credit Cards for Chrome Profile" wide ascii
         $a2 = "Passwords for Chrome Profile" wide ascii
@@ -270,6 +286,7 @@ rule hacktool_macos_n0fate_chainbreaker
         description = "chainbreaker can extract user credential in a Keychain file with Master Key or user password in forensically sound manner."
         reference = "https://github.com/n0fate/chainbreaker"
         author = "@mimeframe"
+        id = "6b04050d-006d-56c0-91b4-8dda1c1ff3fa"
     strings:
         $a1 = "[!] Private Key Table is not available" wide ascii
         $a2 = "[!] Public Key Table is not available" wide ascii
@@ -284,6 +301,7 @@ rule hacktool_macos_ptoomey3_keychain_dumper
         description = "Keychain dumping utility."
         reference = "https://github.com/ptoomey3/Keychain-Dumper"
         author = "@mimeframe"
+        id = "7be4b137-619d-5d19-ac31-5c0148a3a77a"
     strings:
         $a1 = "keychain_dumper" wide ascii
         $a2 = "/var/Keychains/keychain-2.db" wide ascii
@@ -302,6 +320,7 @@ rule hacktool_multi_bloodhound_owned
         description = "Bloodhound: Custom queries to document a compromise, find collateral spread of owned nodes, and visualize deltas in privilege gains"
         reference = "https://github.com/porterhau5/BloodHound-Owned/"
         author = "@fusionrace"
+        id = "cffa3b8a-cf55-531b-aa67-ca8a8841bdec"
     strings:
         $s1 = "Find all owned Domain Admins" fullword ascii wide
         $s2 = "Find Shortest Path from owned node to Domain Admins" fullword ascii wide
@@ -323,6 +342,7 @@ rule hacktool_multi_jtesta_ssh_mitm
         description = "intercepts ssh connections to capture credentials"
         reference = "https://github.com/jtesta/ssh-mitm"
         author = "@fusionrace"
+        id = "c44ca655-71f8-50d6-b0ec-9a85434d780f"
     strings:
         $a1 = "INTERCEPTED PASSWORD:" wide ascii
         $a2 = "more sshbuf problems." wide ascii
@@ -336,6 +356,7 @@ rule hacktool_multi_masscan
         description = "masscan is a performant port scanner, it produces results similar to nmap"
         reference = "https://github.com/robertdavidgraham/masscan"
         author = "@mimeframe"
+        id = "7eac2470-b3e3-530a-a123-594776eb1c77"
     strings:
         $a1 = "EHLO masscan" fullword wide ascii
         $a2 = "User-Agent: masscan/" wide ascii
@@ -354,6 +375,7 @@ rule hacktool_multi_ncc_ABPTTS
         description = "Allows for TCP tunneling over HTTP"
         reference = "https://github.com/nccgroup/ABPTTS"
         author = "@mimeframe"
+        id = "c1efad63-0b43-5314-8cbb-08b8b04a3365"
     strings:
         $s1 = "---===[[[ A Black Path Toward The Sun ]]]===---" ascii wide
         $s2 = "https://vulnerableserver/EStatus/" ascii wide
@@ -374,6 +396,7 @@ rule hacktool_multi_ntlmrelayx
         description = "https://www.fox-it.com/en/insights/blogs/blog/inside-windows-network/"
         reference = "https://github.com/CoreSecurity/impacket/blob/master/examples/ntlmrelayx.py"
         author = "@mimeframe"
+        id = "e638e9d0-404d-5b48-910c-6b3cd0845b78"
     strings:
         $a1 = "Started interactive SMB client shell via TCP" wide ascii
         $a2 = "Service Installed.. CONNECT!" wide ascii
@@ -390,6 +413,7 @@ rule hacktool_multi_pyrasite_py
         description = "A tool for injecting arbitrary code into running Python processes."
         reference = "https://github.com/lmacken/pyrasite"
         author = "@fusionrace"
+        id = "92cef916-5919-562f-ae5a-06a1e79a8197"
     strings:
         $s1 = "WARNING: ptrace is disabled. Injection will not work." fullword ascii wide
         $s2 = "A payload that connects to a given host:port and receives commands" fullword ascii wide
@@ -415,6 +439,7 @@ rule hacktool_multi_responder_py
         description = "Responder is a LLMNR, NBT-NS and MDNS poisoner, with built-in HTTP/SMB/MSSQL/FTP/LDAP rogue authentication server"
         reference = "http://www.c0d3xpl0it.com/2017/02/compromising-domain-admin-in-internal-pentest.html"
         author = "@fusionrace"
+        id = "dbe2f8e0-21fa-55f4-90e1-c6bc2b5403f2"
     strings:
         $s1 = "Poison all requests with another IP address than Responder's one." fullword ascii wide
         $s2 = "Responder is in analyze mode. No NBT-NS, LLMNR, MDNS requests will be poisoned." fullword ascii wide
@@ -435,6 +460,7 @@ rule hacktool_windows_hot_potato
         description = "https://foxglovesecurity.com/2016/01/16/hot-potato/"
         reference = "https://github.com/foxglovesec/Potato"
         author = "@mimeframe"
+        id = "68799fd0-0aac-5c4e-a76c-594d48a5765d"
     strings:
         $a1 = "Parsing initial NTLM auth..." wide ascii
         $a2 = "Got PROPFIND for /test..." wide ascii
@@ -451,6 +477,7 @@ rule hacktool_windows_moyix_creddump
         description = "creddump is a python tool to extract credentials and secrets from Windows registry hives."
         reference = "https://github.com/moyix/creddump"
         author = "@mimeframe"
+        id = "b3147c06-a1a5-53f2-b1f8-78d6474f9bbe"
     strings:
         $a1 = "!@#$%^&*()qwertyUIOPAzxcvbnmQQQQQQQQQQQQ)(*@&%" wide ascii
         $a2 = "0123456789012345678901234567890123456789" wide ascii
@@ -467,6 +494,7 @@ rule hacktool_windows_ncc_wmicmd : FILE {
         description = "Command shell wrapper for WMI"
         reference = "https://github.com/nccgroup/WMIcmd"
         author = "@mimeframe"
+        id = "16f616e2-120c-5067-b083-957f49cb0baa"
     strings:
         $a1 = "Need to specify a username, domain and password for non local connections" wide ascii
         $a2 = "WS-Management is running on the remote host" wide ascii
@@ -486,6 +514,7 @@ rule hacktool_windows_rdp_cmd_delivery
         description = "Delivers a text payload via RDP (rubber ducky)"
         reference = "https://github.com/nopernik/mytools/blob/master/rdp-cmd-delivery.sh"
         author = "@fusionrace"
+        id = "1b00805a-9ea5-5af8-95f8-fd0db0d6cc9f"
     strings:
         $s1 = "Usage: rdp-cmd-delivery.sh OPTIONS" ascii wide
         $s2 = "[--tofile 'c:\\test.txt' local.ps1 #will copy contents of local.ps1 to c:\\test.txt" ascii wide
@@ -501,6 +530,7 @@ rule hacktool_windows_wmi_implant
         description = "A PowerShell based tool that is designed to act like a RAT"
         reference = "https://www.fireeye.com/blog/threat-research/2017/03/wmimplant_a_wmi_ba.html"
         author = "@fusionrace"
+        id = "b32996b2-1706-5af5-ad81-f73d5899c70c"
     strings:
         $s1 = "This really isn't applicable unless you are using WMImplant interactively." fullword ascii wide
         $s2 = "What command do you want to run on the remote system? >" fullword ascii wide
@@ -529,6 +559,7 @@ rule hacktool_windows_mimikatz_copywrite
         md5_4 = "004c07dcd04b4e81f73aacd99c7351337f894e4dac6c91dcfaadb4a1510a967c"
         md5_5 = "09c542ff784bf98b2c4899900d4e699c5b2e2619a4c5eff68f6add14c74444ca"
         md5_6 = "09054be3cc568f57321be32e769ae3ccaf21653e5d1e3db85b5af4421c200669"
+        id = "6fe945de-6458-57ee-8a59-54ea85e56c91"
     strings:
         $s1 = "Kiwi en C" fullword ascii wide
         $s2 = "Benjamin DELPY `gentilkiwi`" fullword ascii wide
@@ -551,6 +582,7 @@ rule hacktool_windows_mimikatz_errors
         author = "@fusionrace"
         md5_1 = "09054be3cc568f57321be32e769ae3ccaf21653e5d1e3db85b5af4421c200669"
         md5_2 = "004c07dcd04b4e81f73aacd99c7351337f894e4dac6c91dcfaadb4a1510a967c"
+        id = "5b0c12f0-b182-5c24-bde5-2bb3bc2a5a8f"
     strings:
         $s1 = "[ERROR] [LSA] Symbols" fullword ascii wide
         $s2 = "[ERROR] [CRYPTO] Acquire keys" fullword ascii wide
@@ -568,6 +600,7 @@ rule hacktool_windows_mimikatz_files
         author = "@fusionrace"
         md5_1 = "09054be3cc568f57321be32e769ae3ccaf21653e5d1e3db85b5af4421c200669"
         md5_2 = "004c07dcd04b4e81f73aacd99c7351337f894e4dac6c91dcfaadb4a1510a967c"
+        id = "a83b4d1e-23d1-5a58-9973-3c251c9c7c34"
     strings:
         $s1 = "kiwifilter.log" fullword wide
         $s2 = "kiwissp.log" fullword wide
@@ -589,6 +622,7 @@ rule hacktool_windows_mimikatz_modules
         md5_3 = "09054be3cc568f57321be32e769ae3ccaf21653e5d1e3db85b5af4421c200669"
         md5_4 = "004c07dcd04b4e81f73aacd99c7351337f894e4dac6c91dcfaadb4a1510a967c"
         md5_5 = "0fee62bae204cf89d954d2cbf82a76b771744b981aef4c651caab43436b5a143"
+        id = "c614db69-7e55-5442-b25d-d31ba5df4ca8"
     strings:
         $s1 = "mimilib" fullword ascii wide
         $s2 = "mimidrv" fullword ascii wide
@@ -610,6 +644,7 @@ rule hacktool_windows_mimikatz_sekurlsa
         author = "@fusionrace"
         SHA256_1 = "09054be3cc568f57321be32e769ae3ccaf21653e5d1e3db85b5af4421c200669"
         SHA256_2 = "004c07dcd04b4e81f73aacd99c7351337f894e4dac6c91dcfaadb4a1510a967c"
+        id = "a7eb069a-1f6f-5e54-9f34-83aa65fa345e"
     strings:
         $s1 = "dpapisrv!g_MasterKeyCacheList" fullword ascii wide
         $s2 = "lsasrv!g_MasterKeyCacheList" fullword ascii wide
