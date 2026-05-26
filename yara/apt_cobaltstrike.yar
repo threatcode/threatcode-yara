@@ -84,6 +84,7 @@ rule HKTL_CobaltStrike_Beacon_XOR_Strings {
       $s3 = "%s as %s\\%s: %d" xor(0x01-0xff)
 
       $fp1 = "MalwareRemovalTool" ascii wide
+      $fp2 = "advanced malware removal tool" ascii wide
    condition:
       2 of ($s*) and not 1 of ($fp*)
 }
