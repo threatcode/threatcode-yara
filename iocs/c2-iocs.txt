@@ -1912,4 +1912,18 @@ repocket.com
 env-check.daemontools.cc
 38.180.107.76
 
+# Nimbus Manticore (UNC1549) APT Backdoor 2026-05-26 (MAL, APT)
+globalitconsultants.azurewebsites.net
+globalbusiness-checkers-it.azurewebsites.net
+global-check-business-it.azurewebsites.net
+global-check-itbusiness.azurewebsites.net
+global-it-checkbusiness.azurewebsites.net
+global-it-consultants.azurewebsites.net
+globalit-consultants.azurewebsites.net
+global-it-checkers.azurewebsites.net
+business-dns-ns-joiners.azurewebsites.net
+ebix-exam-join-from-app.azurewebsites.net
+business-joiners-exam.azurewebsiets.net
+join-exam-now-ebix.azurewebsites.net
+
 # Last Line
