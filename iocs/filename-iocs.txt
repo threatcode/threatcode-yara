@@ -4577,4 +4577,10 @@ C:\\Windows\\Temp\\imp\.tmp;85
 C:\\Windows\\Temp\\piyu\.exe;85
 C:\\ProgramData\\Microsoft\\mcrypto\.chiper;85
 
+# Nimbus Manticore APT Backdoor (UNC1549) 2026-05-26 (MAL, APT)
+\\AppData\\Local\\VirtualStore\\result\.con;85
+\\CKAConsent\.dll;85
+\\2FAGuard\\main\.dll;85
+\\2FAGuard\\setup\.exe\.config;85
+
 # End
