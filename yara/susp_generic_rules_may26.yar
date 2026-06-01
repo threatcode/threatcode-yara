@@ -1,7 +1,7 @@
 rule SUSP_AppDomainInjection_Keyword_May26 {
    meta:
       description = "Detects link files, archives and binaries that contain keywords related to AppDomain hijacking/injection a technique used by malware to sideload payloads."
-      author = "Jonathan Peters (cod3nym)"
+      author = "Jonathan Peters (Nextron Systems)"
       date = "2026-05-27"
       reference = "https://attack.mitre.org/techniques/T1574/014/"
       hash = "eee657ffdb2af8ed6412221e7d5fbf4f5742f2ac2c88f43f12db46af0697de71"
@@ -22,9 +22,9 @@ rule SUSP_AppDomainInjection_Keyword_May26 {
 rule SUSP_PE_Contains_Encrypted_Executable_May26 {
    meta:
       description = "Detects executables containing an encrypted embedded payload using parameters commonly observed in malware, suggesting obfuscation or staged execution."
-      author = "Jonathan Peters (cod3nym)"
+      author = "Jonathan Peters (Nextron Systems)"
       date = "2026-05-20"
-      reference = "Internal Research"
+      reference = "https://www.nextron-systems.com/2026/06/01/detecting-nimbus-manticore-and-their-sideloading-infection-chains/"
       hash = "eee657ffdb2af8ed6412221e7d5fbf4f5742f2ac2c88f43f12db46af0697de71"
       score = 70
    strings:
