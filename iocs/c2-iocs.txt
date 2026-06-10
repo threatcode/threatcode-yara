@@ -1912,7 +1912,7 @@ repocket.com
 env-check.daemontools.cc
 38.180.107.76
 
-# Nimbus Manticore (UNC1549) APT Backdoor 2026-05-26 (MAL, APT)
+# Nimbus Manticore (UNC1549) APT Backdoor 2026-05-26 https://www.nextron-systems.com/2026/06/01/detecting-nimbus-manticore-and-their-sideloading-infection-chains/
 globalitconsultants.azurewebsites.net
 globalbusiness-checkers-it.azurewebsites.net
 global-check-business-it.azurewebsites.net
@@ -1925,5 +1925,10 @@ business-dns-ns-joiners.azurewebsites.net
 ebix-exam-join-from-app.azurewebsites.net
 business-joiners-exam.azurewebsiets.net
 join-exam-now-ebix.azurewebsites.net
+
+# Phishing Fake Hiring Portals https://www.nextron-systems.com/2026/06/01/detecting-nimbus-manticore-and-their-sideloading-infection-chains/
+ebix.portal-career.com
+ebix-exam.com
+ebix.recruitment-flow.com
 
 # Last Line
